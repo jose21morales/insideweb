@@ -1,0 +1,289 @@
+/*------ Error of the search engine ------*/
+
+.error_empty, .error_article_not_exist {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(90,90,90);
+}
+
+/*----- Internet Search Engine ------*/
+
+.search_engine-container {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background: rgb(200,0,0);
+  padding: 10px;
+  box-sizing: border-box;
+}
+.search_engine-form {
+  width: 100%;
+}
+.search_engine-form input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 0;
+}
+.btn-button {
+  margin-left: -30px;
+  background: none;
+  border: 0;
+  color: rgb(80,80,80);
+}
+.btn-button:hover {
+  color: #000;
+}
+
+/*----- End Of Internet Search Engine ------*/
+
+/* -------------------- Articles of search engine -------------------- */
+.search_engine_post-result {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.search_engine_post-result2 {
+  color: rgb(70,70,70);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.search_engine_post-container {
+  width:100%;
+  margin:auto;
+}
+
+.search_engine_post--flex {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 8px;
+  margin-bottom:20px;
+  border-top: 2px solid rgb(150,150,150);
+  border-bottom: 2px solid rgb(150,150,150);
+}
+
+.search_engine_post, .search_engine_post-info {
+  width: 48%;
+}
+
+.search_engine_post-title a {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(0,80,130);
+  text-decoration: none;
+}
+
+.search_engine_post-title a:hover {
+  /*text-decoration: underline;*/
+  color: rgb(0,100,170);
+}
+
+.search_engine_post-img {
+  object-fit:cover;
+  width: 100%;
+  height:150px;
+}
+
+.search_engine_post-extract {
+  font-size: 14px;
+}
+
+.search_engine_post-continue {
+  padding:5px;
+  border:0px solid rgb(0,80,0);
+  border-radius:4px;
+  background:rgb(0,140,0);
+  color: #fff;
+  text-decoration:none;
+  font-size:12px;
+  transition: all 0.3s;
+ }
+
+.search_engine_post-continue:hover {
+  background:rgb(0,160,0);
+}
+/* -------------------- End Of Articles of search engine -------------------- */
+
+/* -------------------- Estilos del blog -------------------- */
+.container-blog, .search_engine_post-container {
+  width:100%;
+  margin:auto;
+}
+
+.post-contenido {
+  margin-bottom: 20px;
+}
+
+.post {
+	background: white;
+	padding: 18px;
+  margin-bottom:20px;
+	box-shadow: 0px 0px 35px rgb(183,183,183);
+	border-radius: 4px;
+}
+
+.post-titulo a {
+	font-size: 24px;
+	color: rgb(0,80,130);
+	text-decoration: none;
+  font-weight: normal;
+}
+
+.post-titulo a:hover {
+	/*text-decoration: underline;*/
+	text-decoration: none;
+	color: rgb(0,100,170);
+}
+
+.fecha {
+	margin-top: 12px;
+	margin-bottom: 15px;
+	color: rgb(130,130,130);
+}
+
+.post-img {
+        object-fit:cover;
+	width: 100%;
+        height:150px;
+}
+
+.extracto {
+  font-size:14px;
+	padding-top: 15px;
+  line-height: 25px;
+  color: rgb(60,60,60);
+}
+
+.continuar {
+        padding:5px;
+        border:0px solid rgb(0,80,0);
+        border-radius:4px;
+        background:rgb(0,140,0);
+	color: #fff;
+        text-decoration:none;
+        font-size:12px;
+  transition: all 0.3s;
+ }
+
+.continuar:hover {
+  background:rgb(0,160,0);
+}
+
+/*Paginación*/
+.paginacion {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+#active {
+  font-weight: bold;
+}
+.pag-link {
+  color: #c33333;
+  text-decoration: none;
+  padding: 5px 12px 5px 12px;
+  box-shadow: 0px 0px 2px #c33333;
+  border-radius: 3px;
+}
+.pag-link:hover {
+  box-shadow: 0px 0px 4px #c33333;
+}
+
+@media screen and (min-width: 480px) {
+  .search_engine_post-container {
+    width: 95%;
+  }
+  .container-blog {
+    width:450px;
+  }
+  .post {
+    padding: 25px;
+  }
+.post-titulo a {
+  font-size: 26px;
+}
+/*-------------Paginación-------------*/
+  .pag-link {
+    padding: 10px 17px 10px 17px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+      /*----- Internet Search Engine ------*/
+      .search_engine-form {
+        width: 40%;
+      }
+      /*----- End Of Internet Search Engine ------*/
+      /* ----------- Articles of search engine --------- */
+      .search_engine_post {
+        width: 35%;
+      }
+      .search_engine_post-info {
+        width: 63%;
+      }
+      /* ---------- End Of Articles of search engine ------------ */
+
+      .container-blog {
+         width:720px;
+       }     
+ 
+       .post-contenido {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:space-between;
+        }
+
+        .post {
+          width:40%;
+        }
+        .post-titulo a {
+          font-size: 24px;
+        }
+
+        .extracto {
+          font-size:15px;
+        }
+
+      	.paginacion ul li a {
+                  padding:15px;
+      	}
+
+        .active {
+            padding:15px;
+        }
+
+@media screen and (min-width: 1024px) {
+  /* ----------- Articles of search engine --------- */
+  .search_engine_post {
+    width: 30%;
+  }
+  .search_engine_post-info {
+    width: 68%;
+  }
+  /* ---------- End Of Articles of search engine ------------ */
+  .container-blog, .contenedor-div, .search_engine_post-container {
+    width:1000px;
+  }
+  .post-titulo a {
+    font-size: 26px;
+  }
+  /*Paginación*/
+  .paginacion {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container-blog, .search_engine_post-container {
+    width: 1300px;
+  }
+  .post {
+    width:28%;
+  }
+}

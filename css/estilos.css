@@ -1,0 +1,1849 @@
+@font-face {
+  font-family: 'Pacifico';
+  src:url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  src:url(../fonts/Montserrat-Bold.ttf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+.container {
+  width:100%;
+  margin:auto;
+}
+.error_login {
+  background: rgb(250,200,200);
+  color: rgb(255,30,30);
+  font-size: 14px;
+  text-align: center;
+  padding: 7px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.no_error_login {
+  background: rgb(150,230,150);
+  color: rgb(90,150,90);
+  font-size: 14px;
+  text-align: center;
+  padding: 7px;
+  border: 0;
+  border-radius: 5px;
+}
+/* -------------------- Estilos del header -------------------- */
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+}
+
+.header-fijo {
+  width: ;
+}
+
+.header-logo {
+  display: none;
+  background:rgb(0,100,200);
+  font-size:25px;
+  font-family:arial;
+  font-weight:normal;
+  letter-spacing:4px;
+  color:#fff;
+  padding:8px;
+  text-align:center;
+}
+
+.header-contenido {
+  padding:5px;
+  position: ;
+  background: ;
+}
+
+.header [class*='icon-'] {
+  margin-right:5px;
+  font-size:18px;
+}
+
+.header [class*='icon-']:before {
+  position:relative;
+  top:3px;
+  right:5px;
+}
+
+.header-phone, .header-location {
+  color:rgb(0,100,200);
+  font-weight:bold;
+}
+
+/* -------------------- Estilos del menu -------------------- */
+.contenedor-div {
+  width: 100%;
+  margin-top:54px;
+  padding: 8px;
+  position: fixed;
+  z-index: 1;
+  overflow:hidden;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.contenedor-div--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-bars {
+  display: block;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  float:right;
+  margin-right:3%;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-left:-500px;
+  display:none;
+  width:100%;
+}
+
+/* LOGOTIPO */
+
+.logo-container {
+  display: flex;
+  justify-content: ;
+  flex-wrap: ;
+}
+
+.logo-letter {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+.logo-letter2 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.logo-insideweb {
+  width: 58px;
+  height: 30px;
+  margin-right: 3px;
+  padding-top: 3px;
+  object-fit: cover;
+}
+
+/* FIN DE LOGOTIPO */
+
+.menu {
+  display: block;
+  position: fixed;
+  top: 125px;
+  left: 5%;
+  opacity: 1;
+  width: 90%;
+  background: rgb(0,80,130);
+  border-radius: 8px;
+  list-style: none;
+  text-align: center;
+  padding:0;
+  transition: all 0.4s;
+}
+.menu__link {
+  display: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: background .3s;
+}
+
+.menu__link:hover {
+  background: rgb(0,100,150);
+  color: #fff;
+}
+
+.select {
+  background: rgb(0,100,150);
+}
+
+.mostrar {
+  top: 135px;
+  opacity: 1;
+}
+
+.mostrar-link-about,.mostrar-link-blog,.mostrar-link-portafolio,
+.mostrar-link-contact,.mostrar-link-home {
+  display: block;
+}
+
+.menu__link-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ---------------- Menu 2 -------------------- */
+.perfil__item {
+  display: none;
+  padding: 10px;
+  background: rgb(0,70,120);
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.perfil__item:hover {
+  background: ;
+  color: #fff;
+}
+.menu2 {
+  display: none;
+  list-style: none;
+}
+.perfil__item:hover > .menu2 {
+  display: block;
+}
+
+.menu__link2 {
+  display: none;
+  padding: 15px;
+  background: rgb(0,80,130);
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;  
+}
+.menu__link2:hover {
+  background: rgb(0,100,150);
+  color: #fff;
+}
+
+.mostrar-perfil__item,.mostrar-link2-perfil,.mostrar-link2-close {
+  display: block;
+}
+
+/*---------------------------*/
+
+.icon-home,.icon-phone,.icon-hospital-o,
+.icon-cloud-download,.icon-user {
+  position: relative;
+  top: 3px;
+}
+
+.banner__img {
+  display:none;    
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* -------------------- Estilos del banner -------------------- */
+
+.banner {
+  background-image:url("../img/cdmx.png");
+  background-attachment:fixed;
+  background-size:100% 100%;
+  margin-top: 0;
+  z-index: -1;
+}
+
+.container__banner {
+  width: 100%;
+  margin: auto;
+}
+
+.contenedor {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.8));
+  color: white;
+  padding-top: 200px;
+  height: 580px;
+}
+
+.banner__content-title__description {
+  text-align: ;
+}
+
+.banner__titulo {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.banner__txt {
+  width: 100%;
+  line-height: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.banner__continue-container {
+  text-align: center;
+  margin-top:80px;
+}
+
+.banner__continue {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.banner__continue--link {
+  background: rgb(0,100,150);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background .3s;
+}
+
+.banner__continue--link:hover {
+  background: rgb(0,115,150);
+}
+
+.banner__continue--link2 {
+  border:1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.icon-chevron-right {
+  font-size: 14px;
+}
+
+.icon-chevron-right:before {
+  position: relative;
+  top: 2px;
+}
+
+.icon-flecha-p {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: ;
+}
+
+.icon-flecha-p a {
+  text-decoration: none;
+}
+
+.icon-flecha {
+  opacity: 0;
+  background: #fff;
+  color: rgb(210,80,100);
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  font-size: 25px;
+}
+
+/* -------------------- Estilos de bienvenida -------------------- */
+
+.contenido__info {
+  background-image:url("../img/code.jpg");
+  background-size:250%;
+  padding: ;
+}
+
+.contenido__info-img__fondo {
+  display:none;
+}
+
+.contenido__info-contenedor-color {
+  position:relative;
+  margin-top:;
+  background:rgba(0,150,240,.6);
+  color:#fff;
+  padding:50px 5px;
+}
+
+.contenido__info-contenedor-img {
+  display:none;
+}
+
+.contenido__info-contenedor-texto-h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenido__info-contenedor-texto-p {
+  text-align:justify;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.contenido__info-contenedor-p {
+  margin-top:20px;
+  text-align:center;
+}
+
+.contenido__info-contenedor-link {
+  background:rgb(0, 80, 130);
+  color:#fff;
+  border-radius: 3px;
+  text-decoration:none;
+  padding:10px;
+  transition: background .2s;
+}
+
+.contenido__info-contenedor-link:hover {
+  background: rgb(0,110,150);
+}
+
+  /*--------------- Estilo de los servicios --------------------*/
+
+  .servicios {
+    padding: 100px 0;
+  }
+
+  .servicios__column {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+  }
+
+  .servicios__column:hover {
+    transform: scale(1.02);
+    border-left: 5px solid rgb(130,0,130);
+    box-shadow: 0px 0px 1px rgb(110,0,110);
+  }
+
+  .servicios__column-img {
+    width: 100%;
+  }
+
+  .servicios__column-title {
+    color: navy;
+  }
+
+  .servicios__column-txt {
+    color:gray;
+  }
+
+  .servicios-titulo {
+    width: 90%;
+    margin: auto;
+    color:#6c63ff;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #6c63ff;
+  }
+
+/* Estilo del formulario de registro */
+
+.formulario__registro-container {
+  background-image: url(../img/form-bg.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.formulario__registro-background {
+  background: rgba(0,0,0,.4);
+}
+
+.formulario__registro--flex {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.formulario__registro-content-title {
+  color: rgb(0,180,220);
+  margin-bottom: 15px;
+}
+
+.formulario__registro-content-txt {
+  margin-bottom: 40px;
+}
+
+.formulario__registro-redes-title {
+  margin-bottom: 20px;
+}
+
+  /*Redes sociales*/
+
+.social-networks {
+  margin-top:5px;
+  margin-bottom: 50px;
+}
+
+.social-networks-link {
+  text-decoration:none;
+}
+
+.social-networks [class*="icon-"] {
+  font-size: 1.3em;
+  margin-right: 7px;
+  position: relative;
+  top: 5px;
+  color: rgb(50,50,50);
+}
+
+.social-networks [class*="icon-"] {
+  color: white;
+  margin-left: 0;
+  margin-right: 15px;
+  padding:10px;
+  padding-bottom:6px;
+  border: 0;
+  border-radius:50%;
+  transition: all .3s;
+}
+
+.facebook-blue {
+  background: rgb(0,100,140);
+}
+
+.facebook-blue:hover {
+  background: rgb(0,140,180);
+}
+
+.twitter-orange {
+  background: rgb(240,130,0);
+}
+
+.twitter-orange:hover {
+  background: rgb(250,160,0);
+}
+
+.instagram-purple {
+  background: rgb(150,0,150);
+}
+
+.instagram-purple:hover {
+  background: rgb(170,0,170);
+}
+
+/*Fin - Redes sociales*/
+
+/*Estilo del boton de blog*/
+
+.formulario__registro-blog-content {
+  padding: 10px;
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario__registro-blog-title {
+  color: rgb(0,150,190);
+  margin-bottom: 20px;
+}
+
+.formulario__registro-blog-button {
+  background: rgb(240,130,0);
+  color: #fff;
+  padding: 14px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: bold;
+  border:0;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+
+.formulario__registro-blog-button:hover {
+  background: rgb(260,150,0);
+}
+
+/*Fin de - estilo del boton de blog*/
+
+/*Estilo del boton de oferta*/
+
+.formulario__registro-oferta-title {
+  color: rgb(0,150,190);
+  margin-bottom: 20px;
+}
+
+.formulario__registro-oferta-button {
+  padding: 10px;
+  background: rgb(240,60,0);
+  color: #fff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+
+.formulario__registro-oferta-button:hover {
+  background: rgb(260,80,0);
+}
+
+/*Fin de - estilo del boton de oferta*/
+
+/*Estilo del boton de contacto*/
+
+.formulario__registro-contact-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario__registro-contact-content {
+  text-align: center;
+}
+
+.formulario__registro-contact, .formulario__registro-projects {
+  background: #fff;
+  color: rgb(240,60,0);
+  padding: 10px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.formulario__registro-contact:hover, .formulario__registro-projects:hover {
+  background: rgb(240,60,0);
+  color: #fff;
+}
+
+/*Fin de - Estilo del boton de contacto*/
+
+.formulario__registro-content {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.formulario__registro-form {
+  width: 100%;
+  border-left: 5px solid rgb(0,150,190);
+  border-radius: ;
+  padding: 15px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.formulario__registro-title {
+  color: rgb(0,150,190);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario__registro-form label {
+  color: #000;
+}
+
+.formulario__registro-form label, input {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+}
+
+.formulario__registro-select {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 13px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 0;
+  border: 1px solid #ccc;  
+}
+
+.formulario__registro-form input {
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 13px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 0;
+  border: 1px solid #ccc;
+}
+
+.formulario__registro-form input[type="submit"] {
+  height: 35px;
+  border: 0;
+  border-radius: 3px;
+  background: rgb(0,100,150);
+  color: #fff;
+  cursor: pointer;
+}
+
+.formulario__registro-form input[type="submit"]:hover {
+  background: rgb(0,110,160);
+}
+
+.register-p {
+  color: #000;
+}
+
+.register-p a:hover {
+  text-decoration: none;
+}
+
+/* ----------------- Estilo del formulario de proyectos ---------------- */
+
+.contenedor-formulario__proyectos-title {
+  display: none;
+}
+
+.contenedor-formulario__proyectos {
+  margin-bottom:10px;
+  border-radius:5px;
+}
+
+.form__promo-content {
+  margin-bottom: 20px;
+}
+
+.form__promo-title {
+  text-align: center;
+  color: rgb(0,100,200);
+  margin-bottom: 10px;
+}
+
+.formulario__proyectos-titulo {
+  padding:10px;
+  font-size:16px;
+  text-align:center;
+  color:#fff;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.formulario__proyectos {
+  padding:15px;
+  background: rgb(50,50,50);
+}
+
+.formulario__proyectos input {
+  width:100%;
+  height: 30px;
+}
+
+.formulario__proyectos input[type="text"] {
+  margin-bottom:5px;
+}
+
+.formulario__proyectos-textarea {
+  width: 96%;
+  min-width: 96%;
+  max-width: 100%;
+  height: 100px;
+  min-height: 60px;
+  max-height: 140px;
+  font-family: 'Montserrat';
+  font-size: 14px;  
+}
+
+.formulario__proyectos input[type="submit"]:hover {
+  cursor:pointer;
+}
+
+  /*--------------- Estilo de paquetes --------------------*/
+
+  .contenedor-costos {
+    padding: 100px 0;
+  }
+  .contenedor-costos-titulo {
+    font-size:16px;
+    text-align:center;
+    color:red;
+    margin-bottom:20px;
+  }
+
+  .costos-column {
+    width: 85%;
+    margin: auto;
+    padding:20px;
+    box-sizing: border-box;
+    margin-bottom:20px;
+    background: #fff;
+    box-shadow:0px 0px 25px rgb(150,120,150);
+  }
+
+  .costos-column-titulo, .costos-column-precio {
+    margin-bottom:10px;
+    text-align:center;
+  }
+
+  .costos-column-precio-anterior {
+    text-align:center;
+    color:gray;
+  }
+
+  .costos-column-texto {
+    color:rgb(55,55,55);
+    list-style: none;
+    font-size: 14px;
+  }
+
+  .costos-column-titulo {
+    color:rgb(150,90,150);
+  }
+
+  .costos-column-precio {
+    color:rgb(200,50,50);
+  }
+
+  .costos-column-descripcion {
+    color:rgb(55,55,55);
+    font-size:12px;
+    text-align:justify;
+    margin-top:10px;
+  }
+
+  .costos-column-p {
+    margin-top:20px;
+    text-align:center;
+    font-size: 14px;
+  }
+
+  .costos-column-link {
+    text-decoration:none;
+    padding:7px;
+    color: rgb(150,90,150);
+    border-radius:3px;
+    box-shadow: 0px 0px 8px rgb(150,120,150);
+    transition: all .3s;
+  }
+  .costos-column-link:hover {
+    box-shadow: 0px 0px 15px rgb(150,120,150);
+  }
+    
+/*--------------- Desarrollo --------------------*/
+
+.container-developer-color {
+  background:rgb(200,230,240);
+  padding: 100px 0;
+}
+
+.developer-image-img {
+  width:100%;
+}
+
+.developer-text {
+  color:rgb(60, 60, 60);
+  width: 100%;
+}
+
+.developer-title {
+  text-align:center;
+  margin-bottom: 10px;
+}
+
+.developer-txt {
+  text-align:justify;
+  margin-bottom:20px;
+  line-height: 27px;
+}
+
+.developer-networks {
+  display:flex;
+}
+
+.developer-networks-link {
+  margin-right:10px;
+  font-size:12px;
+  color:rgb(60, 60, 60);
+  text-decoration:none;
+}
+
+.developer-networks [class*="icon-"]:before {
+  position:relative;
+  top:2px;
+  right:3px;
+}
+
+/* -------------------- Estilos de las tecnologias --------------------- */
+.container-technologies {
+  background-image:url('img/invierno.jpg');
+  background-attachment:fixed;
+  background-size:100% 100%;
+  width:100%;
+  padding: 100px 0;
+}
+
+.technologies-titulo {
+  font-size:22px;
+  text-align:center;
+  letter-spacing: 3px;
+  color:rgb(0, 80, 130);
+  width: 195px;
+  padding-bottom: 7px;
+  margin: auto;
+  margin-bottom:80px;
+  border-bottom: 3px solid rgb(0, 80, 130);
+}
+
+.technologies {
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.technologies:hover {
+  border-left:5px solid rgb(100,0,100);
+  background: rgba(200,0,200,.2);
+}
+
+.technologies-title {
+  font-size: 20px;
+  text-align: center;
+  color:#444;
+  margin: 10px 0 10px 0;
+}
+
+.technologies-img {
+  width:100%;
+  height: 150px;
+  object-fit: contain;
+  display:;
+}
+
+.technologies-txt {
+  text-align:center;
+}
+
+/* -------------------- Estilos de la mision/vision -------------------- */
+
+.contenido-mv {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.mision, .vision, .objetivos {
+  margin-bottom: 10px;
+  padding: 20px;
+  display: block;
+  border-radius: 8px;
+}
+
+.mision:hover, .vision:hover, .objetivos:hover {
+  box-shadow: 0px 0px 8px #000;
+}
+
+.mision {
+  background: rgb(0,140,0);
+}
+
+.vision {
+  background: #FF8000;
+}
+
+.objetivos {
+  background: rgb(90,0,90);
+}
+
+/* -------------------- Estilos del Footer -------------------- */
+
+.main-footer {
+  padding: 20px;
+  background: #222;
+}
+
+.column {
+  margin-bottom:15px;
+}
+
+.column-titulo {
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.column-titulo, .column-texto {
+  color:#fff;
+}
+
+.justify {
+  text-align:justify;
+}
+
+.copy {
+  font-size:13px;
+  text-align:center;
+  color: rgb(200, 200, 200);
+}
+
+.column-texto {
+  font-size:13px;
+  margin-bottom:10px;
+  line-height: 28px;background: ;
+  margin: 0;
+}
+
+.main-footer [class*="icon-"] {
+  color:#fff;
+  text-decoration:none;
+}
+
+.main-footer [class*="icon-"]:before {
+  position:relative;
+  top:3px;
+  right:5px;
+}
+
+@media screen and (min-width: 480px){
+  .container {
+    width:95%;
+  }
+
+  /*Estilos del header*/
+
+  .header-contenido {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*Estilos del menu*/
+  .contenedor-div {
+    margin-top: 33px;
+  }
+
+  .logo-white {
+    width: ;
+    height: ;
+    padding-top: ;
+  }
+
+  .menu {
+    top: 115px;
+  }
+
+  /*Estilos del banner*/
+
+.banner {
+  background-size:100% 100%;
+}
+  .contenedor {
+    height: ;
+  }
+
+  .banner__continue--link, .banner__continue--link2 {
+    padding: 12px;
+  }  
+
+  .banner__continue {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .form {
+    width: 82%;
+    margin-top: 20px;
+  }
+
+  .contenido__txt {
+    margin:10px;
+    margin-bottom: 80px;
+  }
+
+  .texto {
+    font-size: 22px;
+  }
+
+/*-------------------- Estilos de bienvenida ---------------------------*/
+
+.contenido__info-contenedor-texto-h2 {
+  font-size: 22px;
+}
+
+.contenido__info-contenedor-color {
+  padding:;
+}
+
+/*-------------------- Estilos de servicios ---------------------------*/
+
+.servicios-titulo {
+  width: 66%;
+}
+
+.servicios-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.servicios__column {
+  width: 25%;
+  padding: 8px;
+  margin: 0;
+}
+
+.servicios__column-img {
+  height: 90px;
+}
+
+.servicios__column-title {
+  font-size: 17px;
+}
+
+.servicios__column-txt {
+  font-size: 15px;
+}
+
+/*Estilo del formulario de registro*/
+
+.formulario__registro--flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+.formulario__registro-content, .formulario__registro {
+  width: 49%;
+}
+
+.formulario__registro-blog-content {
+  padding: 15px;
+}
+
+  /*---------------- Estilo del formulario de proyectos ----------------*/
+
+  .contenedor-formulario__proyectos-title {
+    display: block;
+    text-align: center;
+    color: rgb(0,80,160);
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+  }
+
+  .contenedor-formulario__proyectos {
+    margin:;
+    padding-top:15px;
+  }
+
+  .contenedor-formulario__proyectos-column {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .formulario__proyectos-column {
+    width: 45%;
+  }
+
+  .form__promo-title {
+    font-size: 20px;
+  }
+
+  .formulario__proyectos-titulo {
+    font-size:16px;
+  }
+
+  .formulario__proyectos {
+    padding:20px;
+  }
+
+/*----------------- Estilo de los paquetes -----------------------*/
+.costos-row {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.costos-column {
+  width:46%;
+  margin: 0;
+  margin-bottom:20px;
+  padding:15px;
+}
+
+.column-texto {
+  font-size:14px;
+}
+
+/*----------------- Estilo de las tecnologias -----------------------*/
+.container-technologies {
+  background-size:100%;
+}
+
+.contenedor-technologies {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+  .technologies {
+    width:22%;
+    margin: 0;
+  }
+
+  .technologies-texto {
+    font-size:9px;
+    transform:translateY(170%);
+  }
+
+  /*--------------------------------------------------------------------*/
+  .contenido-mv {
+    width: 91%;
+    margin:22px;
+  }
+
+  .contenido__img {
+    border-radius: 5px;
+  }
+
+  .proyectos-img {
+    margin-bottom: 30px;
+  }
+
+  /*------------------ Estilos del footer ----------------------*/
+  .contenedor-footer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+
+  .column {
+    vertical-align:top;
+    width:30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 20%;
+  }
+
+  .banner {
+    background-size:100% 100%;
+  }
+
+  .banner__titulo {
+    font-size: 32px;
+  }
+
+  .contenido__txt {
+    margin:40px;
+  }
+
+  /*-------------------- Estilos de bienvenida ---------------------------*/
+  .contenido__info {
+    background-size:130%;
+    /*box-shadow: 0px 0px 25px #444;*/
+    border-radius: ;
+  }
+
+  .contenido__info, .contenido__info-contenedor-color {
+    background: 0;
+    padding: 0;
+  }
+
+  .contenido__info {
+    background: rgb(235,235,235);
+    padding: 100px 0;
+  }
+
+  .contenido__info-contenedor--flex {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .contenido__info-contenedor-texto-h2 {
+    color: #000;
+  }
+
+  .contenido__info-contenedor-texto-p {
+    color: #000;
+  }
+
+  .contenido__info-contenedor-img {
+    display:block;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .contenido__info-contenedor-img, .contenido__info-contenedor-texto {
+    width:47%;
+  }
+
+  /*Estilos de servicios*/
+  
+  .servicios-titulo {
+    font-size: 26px;
+    width: 55%;
+  }
+
+  /*Estilos de formulario de registro*/
+
+  .formulario__registro-form {
+    padding: 20px;
+  }
+  .formulario__registro-title {
+    font-size: 23px;
+  }
+
+  .formulario__proyectos-textarea {
+    margin-bottom: 5px;
+  }
+
+  /*Formulario de registro - links*/
+
+  .formulario__registro-blog-content {
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
+  .formulario__registro-blog-title, .formulario__registro-oferta-title {
+    font-size: 18px;
+  }
+
+
+  /*------------ Estilos del formulario de proyectos ---------------*/
+
+  .contenedor-formulario__proyectos-title {
+    font-size: 25px;
+  }
+
+  .contenedor-formulario__proyectos {
+    margin:;
+  }
+
+  .form__promo-title {
+    font-size: 22px;
+  }
+
+  .formulario__proyectos-titulo {
+    font-size:24px;
+  }
+
+  .formulario__proyectos {
+    padding:25px;
+  }
+
+  .formulario__proyectos input {
+    height:35px;
+  }
+
+  .formulario__proyectos input[type="text"] {
+    width:48.1%;
+  }
+
+  .formulario__proyectos-textarea {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .formulario__proyectos input[type="submit"] {
+    width:30%;
+    font-size:16px;
+    color:#fff;
+    background:rgb(220,100,0);
+    border:1px solid rgb(140,60,0);
+  }
+
+  .formulario__proyectos input[type="submit"]:hover {
+    background:#FF8000;
+  }
+
+    /*---------------- Desarrollo ---------------------*/
+
+.container-developer-flex {
+  display:flex;
+  justify-content:space-between;
+}
+
+.developer-image, .developer-text {
+  width:45%;
+}
+
+  /*---------------- Estilo de los paquetes ---------------------*/
+
+  .costos-column {
+    width:30%;
+    padding: 20px;
+  }
+
+  .costos-column-titulo {
+    font-size:18px;
+  }
+
+  .costos-column-texto {
+    font-size:14px;
+  }
+
+  .costos-column-descripcion {
+    font-size:10px;
+  }
+
+  .costos-column-link {
+    padding: 5px;
+  }  
+
+  /*----------------------------------------------------------------*/
+  .contenido-mv {
+    display: inline-flex;
+    margin:30px;
+    width: 86%;
+    margin-left: 7%;
+  }
+
+  .vision {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .proyectos-img {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+   .icon-bars {
+    display: none;
+   }
+
+   .container {
+     width:1000px;
+   }
+   /*Estilos del menu*/
+
+   .contenedor-div {
+    width: 100%;
+    min-width: 100%;
+    height: 55px;
+   }
+
+   .contenedor-div--flex {
+   }
+
+   .contenedor-div--flex-1 {
+    width: 25%;
+   }
+   .contenedor-div--flex-2 {
+    margin-top: -8px;
+    width: 74%;
+   }
+
+   .logo-white {
+    height: 48px;
+   }
+
+   .nav {
+    position: static;
+   }
+
+   .menu {
+    position: static;
+     top: 33px;
+     opacity: 1;
+     width: 100%;
+     min-width: 100%;
+     border-radius: 0;
+     box-sizing: border-box;
+   }
+
+   .menu__item, .perfil__item {
+     float:right;
+     display:inline-block;
+   }
+
+   .perfil__item {
+    padding-left: 0;
+    padding-right: 0;
+    width: 70px;
+    background: 0;
+    text-align: center;
+    color: #fff;
+    height: 35px;
+   }
+
+   .perfil__item:hover {
+    background: rgb(0,60,100);
+    color: #fff;
+   }
+
+   .menu2 {
+    text-align: left;
+    margin-left: -100%;
+   }
+
+   .menu__link2 {
+    display: block;
+   }
+
+   .menu__link2:hover {
+   background: rgb(0,60,100);
+   }
+
+   .menu__link {
+    display: block;
+    border-radius: 0;
+    color: #fff;
+    height: 25px;
+   }
+
+   .menu__link:hover {
+    background: ;
+    color: ;
+   }
+
+  .banner {
+    margin-top:0%;
+    background-size:102% 100%;
+  }
+  .contenedor {
+    height: 350px;
+  }
+
+   .banner__titulo {
+    margin-top: 0;
+   }
+
+   .banner__txt {
+    margin-top: 8px;
+   }
+
+   .icon-flecha-p {
+    margin-top: -28px;
+    margin-bottom: 50px;
+   }
+   .icon-flecha {
+    opacity: 1;
+    padding: 70px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+   }
+
+
+  /* -------------------- Estilos de la animación -------------------- */
+
+.banner-animacion {
+
+  display: flex;
+  width: 600px;
+  height: 40px;
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+
+  position: absolute;
+  top: 320px;
+  right: 0;
+  bottom: 0;
+  left: 340px;
+  margin:;
+
+  overflow: hidden;
+}
+
+.banner-animacion-ul {
+        text-align:center;
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 7s infinite;
+}
+
+.banner-animacion-ul, .banner-animacion-p {
+  margin:0;
+}
+
+@keyframes cambiar {
+  
+  0%{ margin-top: 0;}
+  20%{ margin-top: 0;}
+
+  25%{margin-top: -40px;}
+  50%{margin-top: -40px;}
+
+  55%{margin-top: -80px;}
+  80%{margin-top: -80px;}
+
+  85%{margin-top: -40px;}
+  95%{margin-top: -40px;}
+
+  100%{margin-top: 0;}
+}
+
+  /*--------------- Estilos de bienvenida --------------------*/
+  .contenido__info {
+    background-size:130%;
+  }
+
+  .contenido__info-contenedor-color {
+    padding: ;
+  }
+
+  .contenido__info-contenedor-img, .contenido__info-contenedor-texto {
+    width:48%;
+  }
+
+  /*--------------- Estilo de los servicios --------------------*/
+
+  .servicios-titulo {
+    width: 34%;
+  }
+
+  .servicios__column {
+    width: 28%;
+  }
+
+  .servicios__column-img {
+    height: 200px;
+  }
+
+  /*Estilo de formulario de registro*/
+
+  .formulario__registro-content, .formulario__registro {
+    width: 46%;
+  }
+
+  .formulario__registro-content-title {
+    font-size: 22px;
+  }
+
+  .formulario__registro-form {
+    padding: 25px;
+  }
+
+  .formulario__registro-title {
+    font-size: 26px;
+  }
+
+  .formulario__registro-form label {
+    font-size: 16px;
+  }
+
+  .formulario__registro-form input, select {
+    font-size: 15px;
+  }
+
+  /*------------- Estilo del formulario de proyectos -----------------*/
+  .contenedor-formulario__proyectos {
+    margin-bottom:30px;
+  }
+
+  /*--------------- Estilo de los paquetes --------------------*/
+
+  .contenedor-costos-titulo {
+    font-size:18px;
+  }
+
+  .costos-column-titulo {
+    font-size:20px;
+  }
+
+  .costos-column-link {
+    padding: 7px;
+  }
+
+.animado {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+  
+/*---------------- Desarrollo ---------------------*/
+
+.developer-image, .developer-text {
+  width:;
+  margin-top: 0;
+}
+
+.animadoDerecha {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.animadoIzquierda {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarDerecha {
+  animation: mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.mostrarIzquierda {
+  animation: mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+  /*------------------------------------------------------------------*/
+   .contenido-mv {
+    margin:0;
+    width:;
+   }
+
+   .mision, .vision, .objetivos {
+    transition: .3s;
+   }
+
+   .mision:hover, .vision:hover, .objetivos:hover {
+    transform: scale(1.03);
+   }
+
+   .vision {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+
+   .contenido-proyectos {
+     margin:0;
+   }
+
+   .proyectos-titulo {
+    font-size: 27px;
+    margin-left: 2%;
+   }
+
+   .proyectos-img {
+    display: inline-block;
+    width: 280px;
+    border-radius: 5px;
+    transition: .3s;
+   }
+
+   .proyectos-img:hover {
+    transform: scale(1.04);
+   }
+
+  /*--------------------- Estilos del footer ------------------------*/
+
+  .column-texto {
+    font-size:13px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 1100px;
+  }
+  .contenedor {
+    height: 445px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1300px;
+  }
+
+.container__banner {
+  width: 1300px;
+  margin: auto;
+}
+.banner__form-banner {
+  width: 52%;
+}
+
+/*Estilos del Banner - Formulario*/
+
+.contenedor {
+  height: ;
+}
+
+.banner__form-header-title {
+  font-size: 26px;
+}
+
+.banner__form, .banner__form-header {
+  padding: 30px;
+}
+
+.banner__form input {
+  font-size: 16px;
+  height: 45px;
+}
+
+.login-p, .login-p a {
+  font-size: 16px;
+}
+
+/*Fin de - Estilos del Banner - Formulario*/
+
+  .banner-animacion {
+    top: 430px;
+    left: 680px;
+  }
+
+/*--------------------- Bienvenida --------------------------------------*/
+
+.contenido__info-contenedor-texto-p {
+  font-size: 22px;
+}
+
+/*------------------------ Desarrollo --------------------------------*/
+
+}

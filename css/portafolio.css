@@ -1,0 +1,567 @@
+/* -------------------- Estilos de los proyectos terminados -------------------- */
+.contenedor-portafolio {
+  width: 80%;
+}
+.portafolio-titulo {
+  font-size:26px;
+  text-align:center;
+  color:rgb(0,150,240);
+  margin-top:30px;
+  margin-bottom:60px;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+/*---------- Digital Life --------------*/
+.portafolio-proyecto {
+  margin-bottom:25px;
+  box-shadow:0px 0px 20px rgb(140,140,140);
+  box-sizing: border-box;
+  transition:all .5s;
+  border-radius: 10px;
+}
+
+.portafolio-proyecto:hover {
+  transform:translateY(5px);
+}
+
+.portafolio-content-img {
+  width: 100%;
+  height: 180px;
+  background: rgba(0,0,0,.3);
+  transition: all 0.5s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.portafolio-content-img:hover {
+    background: rgba(0,0,0,.6);
+}
+
+.portafolio-image {
+  background-size: 100% 100%;
+  height: 180px;
+  position: relative;
+  z-index: -1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/*--------- Dinos ---------*/
+.portafolio-image-dinos {
+  background-image: url(../img/dinos.png);
+}
+/*--------- Digital Life ---------*/
+.portafolio-image-digitallife {
+  background-image: url(../img/digitallife.png);
+}
+/*--------- Coffee-Sweet ---------*/
+.portafolio-image-coffee {
+  background-image: url(../img/coffee-sweet.png);
+}
+/*--------- EST129 ---------*/
+.portafolio-image-est129 {
+  background-image: url(../img/est129.png);
+}
+/*--------- Somos Ciencia ---------*/
+.portafolio-image-somosciencia {
+  background-image: url(../img/somosciencia.png);
+}
+.portafolio-image-littlecup {
+  background-image: url(../img/littlecup.png);
+}
+.portafolio-image-blackcoffee {
+  background-image: url(../img/blackcoffee.png);
+}
+/*--------------------------------*/
+.portafolio-img {
+  width:100%;
+}
+
+.portafolio-img-modal {
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  height: 180px;
+  margin-top: -180px;
+  transition: all 0.5s;
+  font-size: 14px;
+  padding: 35px 0;
+  box-sizing: border-box;
+}
+
+.portafolio-img-modal:hover {
+  opacity: 1;
+}
+
+.portafolio-modal-titulo {
+  margin:;
+}
+
+.portafolio-modal-link {
+  color: #fff;
+  margin: ;
+}
+
+.portafolio-modal-desarrollador {
+  margin-top: 35px;
+  font-size: 14px;
+}
+
+.portafolio-content-text {
+  padding: 20px;
+}
+
+.portafolio-texto__link {
+  text-align:center;
+  margin-bottom: 15px;
+}
+
+.portafolio-texto__link-digital {
+  border-radius:15px;
+  padding:7px;
+  background: rgb(220,230,255);
+  color: rgb(0,150,190);
+  text-decoration:none;
+  transition: all 0.3s;
+  font-size:14px;
+  cursor: pointer;
+}
+
+.portafolio-texto__link-digital:hover {
+  background: rgb(80,150,190);
+  color: #fff;
+  padding: 10px;
+}
+
+.portafolio-texto {
+  font-size:14px;
+}
+
+.agencia {
+  color:green;
+}
+
+.negocio {
+  color:red;
+}
+
+.portafolio-ver__pagina {
+  text-align:center;
+  font-size:14px;
+}
+
+.portafolio-ver__pagina a {
+  color: rgb(0,150,190);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.portafolio-ver__pagina a:hover {
+  background: rgb(220,230,255);
+  color: ;
+  padding: 4px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/*Estilos de los clientes*/
+
+.clientes-container-title {
+  font-size: 22px;
+  color: rgb(0,150,190);
+  margin-bottom: 20px;
+}
+
+.clientes-container {
+  margin-bottom: 20px;
+}
+
+.clientes-content--flex {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.clientes-content--flex:hover {
+  background: rgb(220,230,255);
+}
+
+.clientes-content-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.clientes-content {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clientes-content-content {
+  width: 100%;
+}
+
+.clientes-content-user {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.clientes-content-txt {
+  font-size: 14px;
+}
+/*Estilo del menu Editar*/
+
+.menu__edit {
+  list-style: none;
+}
+.icon-cog {
+  color: rgb(90,90,90);
+  padding: 10px;
+  padding-bottom: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-cog:hover {
+  background: rgb(222,222,222);
+}
+.menu__edit2 {
+  display: none;
+}
+
+.menu__edit li:hover > .menu__edit2 {
+  display: block;
+}
+
+.menu__edit2 {
+  width: 50px;
+  position: absolute;
+  margin-left: -6px;
+  margin-top: 5px;
+  list-style: none;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.menu__edit2-link {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+.menu__edit2-link:hover {
+  background: #ccc;
+}
+
+/*Estilo del menu Editar - Modal*/
+
+.modal__commen {
+  background: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.modal__opinion {
+  background-image: url(../img/code-foto.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.modal__opinion-background {
+  background: rgba(0,120,160,.8);
+  height: 443px;
+}
+
+.modal__opinion-title {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.form-modal__opinion-close {
+  width: 15px;
+  height: 15px;
+  line-height: 17px;
+  background: #c33333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  float: right;
+}
+
+.form-modal__opinion {
+  width: 250px;
+  margin: auto;
+  margin-top: 30px;
+  background: #eee;
+  border:0;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.form-modal__opinion-title {
+  margin-bottom: 5px;
+  color: rgb(0,150,190);
+}
+
+.form-modal__opinion-user {
+  color: rgb(0,100,130);
+}
+
+.form-opinion {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100px;
+  min-height: 60px;
+  max-height: 140px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border:1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: 'Montserrat';
+}
+
+.form-modal__opinion input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  background: rgb(0,150,190);
+  color: #fff;
+  border:0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-modal__opinion input[type="submit"]:hover {
+  background: rgb(0,160,190);
+}
+
+/*Comentarios*/
+
+.comentarios__opinion {
+   margin-bottom:20px;
+}
+
+.comentarios__opinion-titulo {
+  color: rgb(0,150,190);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form__commenter-opinion {
+  margin-bottom: 20px;
+}
+
+.form__perfil-opinion, .show__commenter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__perfil-opinion-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.form__perfil-opinion-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form__perfil-opinion-content-user {
+  margin-bottom: 5px;
+  color: rgb(0,100,140);
+}
+
+.textarea-opinion {
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 80px;
+  min-height: 60px;
+  max-height: 100px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(60,60,60);
+  border:1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-comentar-opinion {
+  padding: 4px;
+  width: 100px;
+  background:rgb(0,150,190);
+  color: #fff;
+  font-size: 14px;
+  float:right;
+  border: 0;
+  border-radius: 3px;
+}
+
+.btn-comentar-opinion:hover {
+  cursor: pointer;
+  background:rgb(0,160,190);
+}
+
+@media screen and (min-width: 480px){
+
+ /*-------------- Estilos de los proyectos terminados------------*/
+  .contenedor-portafolio {
+    width: 95%;
+  }
+  .contenedor-portafolio {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-bottom:20px;
+  }
+
+  .portafolio-proyecto {
+    width:40%;
+  }
+
+.portafolio-modal-desarrollador {
+  margin-top: 35px;
+  font-size: 11px;
+}
+
+  .portafolio-texto__link {
+    font-size:14px;
+  }
+
+  .portafolio-texto__link-digital, .portafolio-texto__link-dinos {
+    border-radius:20px;
+  }
+
+  .portafolio-texto {
+    font-size:17px;
+  }
+
+  .portafolio-ver__pagina {
+    font-size:14px;
+  }
+  /*Estilos de los clientes*/
+  .clientes-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .clientes-content--flex {
+    width: 49%;
+  }
+  /*Menu editar*/
+  .menu__edit2, .menu__edit2 {
+    width: 70px;
+    margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*------------ Estilos de los proyectos terminados ---------------*/
+  .portafolio-img {
+    height:180px;
+  }
+  
+  .portafolio-modal-desarrollador {
+    margin-top: 35px;
+    font-size: 14px;
+  }
+
+  .clientes-container-title {
+    font-size: 24px;
+  }
+  /*Menu editar*/
+  .menu__edit2, .menu__edit2 {
+    width: 80px;
+    margin-left: -20px;
+  }
+  /*Menu editar - Modal*/
+  .modal__opinion-title {
+    font-size: 24px;
+  }
+  .form-modal__opinion {
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    background: #eee;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /*Comentarios*/
+  .comentarios__opinion {
+    width: 75%;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  /*---------- Estilos de los proyectos terminados ---------------*/
+  .contenedor-portafolio {
+    width: 1000px;
+  }
+  .portafolio-proyecto {
+    width:30%;
+  }
+
+  .portafolio-img {
+    width:100%;
+    height:55%;
+  }
+  /*Estilos del menu editar - Modal*/
+  .modal__opinion {
+    margin: 0;
+  }
+  .form-modal__opinion {
+    padding: 20px;
+  }
+  .modal__opinion-background {
+    height: 576px;
+  }
+  .modal__opinion-title {
+    font-size: 26px;
+  }
+  /*Comentarios*/
+  .comentarios__opinion {
+    width: 60%;
+  }  
+}
+
+@media screen and (min-width: 1300px) {
+  .contenedor-portafolio {
+    width: 1100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contenedor-portafolio {
+    width: 1300px;
+  }
+  .modal__opinion-background {
+    background: rgba(0,120,160,.8);
+    height: 800px;
+  }
+  .form-modal__opinion {
+    margin-top: 130px;
+  }
+}

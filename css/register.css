@@ -1,0 +1,110 @@
+.message {
+	background: rgb(0,160,0);
+	border:1px solid rgb(0,100,0);
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+.body-registro {
+	background-image: url(../img/bg-login.png);
+	background-size: 100% 100%;
+}
+.body-opacity {/*
+	padding-top: 20px;
+	padding-bottom: 20px;
+    background: rgba(0,95,120,.8);*/
+}
+.form-registro {
+	border-top: 6px solid rgb(0,150,190);
+	border-radius: 10px;
+	width: 95%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	background: rgb(222,243,254);
+	box-sizing: border-box;
+}
+.form-registro-title {
+	font-size: 24px;
+	text-align: center;
+	color: rgb(0,150,190);
+	margin-bottom: 20px;
+}
+.form-registro label {
+	font-size: 14px;
+}
+.form-registro-select {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	font-size: 14px;
+	border:1px solid rgb(190,203,224);
+	border-radius: 5px;
+	background: rgb(212,233,244);
+	color: rgb(0,120,150);
+	font-family: 'Montserrat';
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	font-size: 14px;	
+}
+.form-registro input {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	font-size: 14px;
+	border:1px solid rgb(190,203,224);
+	border-radius: 5px;
+	background: rgb(212,233,244);
+	color: rgb(0,120,150);
+	font-family: 'Montserrat';
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.form-registro input[type="submit"] {
+	border:0;
+	cursor: pointer;
+	background: rgb(0,150,190);
+	color: #fff;
+	font-size: 14px;
+}
+.form-registro input[type="submit"]:hover {
+	background: rgb(0,160,190);
+}
+.register-p {
+	font-size: 14px;
+}
+.checkbox {
+	display: block;
+}
+@media screen and (min-width: 480px) {
+	.form-registro {
+		width: 70%;
+		padding: 20px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.form-registro {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1024px) {
+    .message {
+    	width: 85%;
+    	margin: auto;
+    	margin-top: 15px;
+    	margin-bottom: 15px;
+    	padding: 13px;
+    }
+	.form-registro {
+		width: 35%;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.body-opacity {
+	    padding-top: 100px;
+	    padding-bottom: 100px;
+	}
+}
